@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wide World Travel App</title>
+</head>
+<body ng-app="WideWorldApp">
+  <h1>Travel the World!</h1>
+  <div ng-controller="bookCtrl">
+    <ul ng-repeat="book in books">
+      <li>{{book.type}}</li>
+      <li>{{book.title}}</li>
+      <li>{{book.price}}</li>
+    </ul>
+  </div>
+
+<script type="text/javascript" src="lib/bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="lib/bower_components/angular/angular.min.js"></script>
+<script type="text/javascript" src="lib/bower_components/angular-route/angular-route.min.js"></script>
+<script type="text/javascript" src="app/app.js"></script>
+<script type="text/javascript" src="app/controllers/bookCtrl.js"></script>
+</body>
+</html>
